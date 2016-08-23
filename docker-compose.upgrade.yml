@@ -1,0 +1,8 @@
+version: '2'
+services:
+    jenkins-upgrade:
+       build:
+         context: .
+       volumes:
+         - jenkins_home:/var/jenkins_home
+       command: upgrade
