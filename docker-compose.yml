@@ -1,0 +1,16 @@
+version: '2'
+volumes:
+    jenkins_home:
+services:
+    jenkins:
+       build:
+         context: .
+       restart: "always"
+       ports:
+         - "8080:8080"
+         - "50000:50000"
+       volumes:
+         - jenkins_home:/var/jenkins_home
+       environment:
+         JENKINS_CONFIG_REPOSITORY: "git@github.com:amissemer/jenkins-config-template.git"
+         JENKINS_CONFIG_BRANCH: master

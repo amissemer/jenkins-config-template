@@ -1,0 +1,8 @@
+version: '2'
+services:
+    jenkins:
+       ports:
+         - "18080:8080"
+         - "60000:50000"
+       environment:
+         JENKINS_CONFIG_BRANCH: develop

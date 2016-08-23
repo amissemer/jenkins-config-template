@@ -1,0 +1,10 @@
+.java
+*/jobs/*/builds/
+*/jobs/*/lastStable
+*/jobs/*/lastSuccessful
+*/jobs/*/nextBuildNumber
+.bash*
+.profile
+.ssh
+queue.xml.bak
+

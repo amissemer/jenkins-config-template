@@ -1,0 +1,4 @@
+git
+publish-over-ssh
+stash-pullrequest-builder
+stashNotifier
