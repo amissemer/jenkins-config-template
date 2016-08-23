@@ -48,6 +48,7 @@ This is the reverse operation from the commit. It uses the git repository to ove
 	```
 
 Here is a typical workflow taking advantage of the commit and upgrade features to synchronize a Staging and a Production Jenkins instance:
+
 1. Commit the Production Jenkins configuration in the `master` branch
 2. Create a `develop` branch from the `master` branch
 3. (Re)initialize the Staging Jenkins from the `develop` branch (`files="-p jenkins-staging -f docker-compose.yml -f docker-compose.staging.yml"; docker-compose $files build && docker-compose $files down -v && docker-compose $files up -d`)
