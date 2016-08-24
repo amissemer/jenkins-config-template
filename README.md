@@ -3,7 +3,7 @@ Template for a versionable Jenkins instance
 
 Prepare the Jenkins config repository
 ------------
-* Create a git repository with the content of this archive
+* Create a git repository with the content of this archive (do not forget the `.gitignore`)
 * Create a branch to track your Jenkins instance configuration
 * Edit the docker-compose.yml file:
 ** JENKINS_CONFIG_REPOSITORY: the URL of the remote in the JENKINS_CONFIG_REPOSITORY environment variable
