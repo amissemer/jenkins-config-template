@@ -12,6 +12,9 @@ Prepare the Jenkins config repository
 * Optional: Jenkins SSH key can be provided under jenkins-config/.ssh/id_rsa and will be configured in Jenkins as the default git credential. If not provided, a key will be generated (in that case, use ./passwd.sh to retrieve the public certificate and add it to your repository as a R/W key).
 * Push the git branch to the remote
 
+### Tip
+If you want to store the configuration in a different subdirectory than jenkins-config, simply set JENKINS_CONFIG_PATH to the directory of your choice
+
 First startup
 -------------
 * Start jenkins for the first time using the provided docker-compose.yml file
@@ -31,7 +34,6 @@ Commit the configuration
 
 ### Tip
 After installing a plugin from the UpdateCenter, always restart before committing Jenkins configuration with the git repository (this will stabilize the versions of the plugins): docker-compose restart
-
 
 Upgrading the configuration
 ---------------------------
