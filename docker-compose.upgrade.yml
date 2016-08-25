@@ -1,0 +1,5 @@
+version: '2'
+services:
+    jenkins:
+       restart: "no"
+       command: upgrade
