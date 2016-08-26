@@ -12,5 +12,5 @@ services:
        volumes:
          - jenkins_home:/var/jenkins_home
        environment:
-         JENKINS_CONFIG_REPOSITORY: "ssh://git@enterprise-stash.hybris.com:7999/~adrien.missemer_hybris.com/lids-ci-cd.git"
-         JENKINS_CONFIG_BRANCH: master
+         - JENKINS_CONFIG_REPOSITORY
+         - JENKINS_CONFIG_BRANCH
